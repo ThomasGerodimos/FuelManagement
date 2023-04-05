@@ -1,0 +1,124 @@
+
+  .account{
+    background-color: #02537A;
+    color:white;
+  }
+
+  .account:hover{
+    background-color:#F28E2A;
+  }
+  .active {
+    background-color:#F28E2A;
+    color:white !important;
+  }
+
+  .card-body:hover
+  {
+    background-color: #F28E2A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+
+  .card-body:hover > .card-title{
+    color: white;
+  }
+
+  div.logo {
+    padding: auto;
+    margin: auto;
+  }
+  .logo img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-top:25px;
+  }
+
+  .account-links 
+  {
+    text-align: right;
+    padding-right: 2em ;
+    padding-top: 2em;
+  }
+
+  .center-vertical{
+    padding:auto;
+    margin:auto;
+  }
+  .dev {
+    border: solid;
+    border-color: #F28E2A;
+  }
+
+  .header-title
+  {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.2em;
+  }
+
+  h2.fuel
+  {
+    font-size: 1.6em;
+    padding-top:0.80em;
+    font-family: 'Comfortaa', cursive;text-shadow: 7px 6px 4px rgba(0,0,0,0.19); 
+    color: #444444;
+    background: #FFFFFF;
+  }
+
+  h3.announcement{
+    font-size: 1.3em;
+    background-color:#f28e2a;
+    display: inline;
+    color:white;
+    margin:5px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+
+  h2.announcement{
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  .divider{
+    width: 75%;
+    margin-left:25% !important; 
+    margin-right:25% !important;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #035078;
+    text-align: center;
+    height: 3px;
+  }
+
+  .post-img{
+    --b: 8px;  /* border thickness*/
+    --s: 60px; /* size of the corner*/
+    --g: 14px; /* the gap*/
+    --c: #F28E2A;
+
+    padding: calc(var(--b) + var(--g));
+    background-image:
+            conic-gradient(from  90deg at top    var(--b) left  var(--b),#0000 25%,var(--c) 0),
+            conic-gradient(from -90deg at bottom var(--b) right var(--b),#0000 25%,var(--c) 0);
+    background-position:
+            var(--_p,0%) var(--_p,0%),
+            calc(100% - var(--_p,0%)) calc(100% - var(--_p,0%));
+    background-size: var(--s) var(--s);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition:
+            background-position .3s .3s,
+            background-size .3s calc(.3s - var(--_i,.3s));
+  }
+  .post-img alt {
+    background-image:
+            conic-gradient(from 180deg at top    var(--b) right var(--b),#0000 25%,var(--c) 0),
+            conic-gradient(from   0deg at bottom var(--b) left  var(--b),#0000 25%,var(--c) 0);
+    background-position:
+            calc(100% - var(--_p,0%)) var(--_p,0%),
+            var(--_p,0%) calc(100% - var(--_p,0%));
+  }
+  .post-img:hover {
+    background-size: calc(100% - var(--g)) calc(100% - var(--g));
+    --_p: calc(var(--g)/2);
+    --_i: 0s;
+  }
